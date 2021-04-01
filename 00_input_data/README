@@ -1,0 +1,13 @@
+This folder contains raw data on the 8 species of codfish included in our 
+cod-pop-gen project.
+
+The folder /BAMs/ includes one directory per species. Each one contains 
+symbolic links that point to the original .bam and .bai files, which are 
+located in a different directory (/n/holyscratch01/wakeley_lab/earnason/
+codgenomics/SPECIES_DATASETS/).
+
+The folder /REFs/ includes the 3.0 version of Gadus morhua reference genome.
+It contains a .fasta file with the reference genome, a .dict file and a .fai
+file with the indexing that corresponds to such reference genome. 
+
+There is no metadata available to include here yet.

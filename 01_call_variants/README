@@ -1,0 +1,18 @@
+This directory contains one folder per species with all needed code to 
+get called variants from .bam files from 00_input_data folder by using a
+snakemake pipeline that is described within each folder in a /sm/README.md 
+file. Basically, the pipeline was used to get interval files from the
+reference genome (00_input_data/REFs/) and to genotype .bam files following
+a parallelization approach according to these interval files. The variant 
+caller that we used was GATK.
+
+The pipeline rules, helper functions and scripts are intact from the github
+repo https://github.com/harvardinformatics/shortRead_mapping_variantCalling
+except in the case of Gmo. This species has that many samples that the
+pipeline was not enough parallelized by using the interval lists within
+/Gmo/sm/intervalFiles/gatkLists/. Thus, we further parallelized the pipeline
+at the las step (i.e. DB2vcf). Further explanation about this modification
+can be found at /Gmo/README
+
+See the README files within each species directory for an explanation
+about the status of each variant calling.
