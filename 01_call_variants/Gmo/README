@@ -1,0 +1,9 @@
+Variant calling status: incomplete. Current step: DB2vcf.
+23 out of 52 interval lists are already genotyped.
+
+An alternative DB2vcf step that further parallelizes the pipeline from there
+onwards (according to interval names instead of interval lists) is being 
+tested now. The script to do so is in XXXXXXXXXXXXXXX.
+
+Once the test works, this readme file will be updated with the specifics of
+such modification.
