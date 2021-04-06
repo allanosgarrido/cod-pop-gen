@@ -1,2 +1,6 @@
 Variant calling status: finished.
 Final vcf: /sm/gatk/Combined_hardFiltered.vcf
+
+This folder does not include the ./sm/gatk/ directory (in its github version).
+which contains the data that is needed to continue variant calling. To copy
+the symlinks to this data, run the cp.sh script located within this folder.
