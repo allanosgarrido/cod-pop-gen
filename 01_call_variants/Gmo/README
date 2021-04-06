@@ -3,7 +3,14 @@ Variant calling status: incomplete. Current step: DB2vcf.
 
 An alternative DB2vcf step that further parallelizes the pipeline from there
 onwards (according to interval names instead of interval lists) is being 
-tested now. The script to do so is in XXXXXXXXXXXXXXX.
+tested now. The script to do so is /sm/DB2vcf_try.sh and the putative final
+scripts are /sm/DB2vcf.sh and /sm/submit_DB2vcf.batch. The last one is meant
+to submit one job to run DB2vcf.sh per interval name within each interval
+list in /sm/intervalFiles/gatkLists/
 
 Once the test works, this readme file will be updated with the specifics of
 such modification.
+
+This folder does not include the ./sm/gatk/ directory (in its github version).
+which contains the data that is needed to continue variant calling. To copy
+the symlinks to this data, run the cp.sh script located within this folder.
