@@ -7,7 +7,5 @@
 #SBATCH -t 30-00:00:00
 #SBATCH --mem=10000
 
-module load Anaconda3/2020.11
-source activate snakemake
+source ~/.conda/envs/snakemake/bin/activate
 snakemake --snakefile Snakefile_bam2vcf_gatk --profile ./profiles/slurm
-
