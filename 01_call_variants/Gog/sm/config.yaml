@@ -2,7 +2,7 @@
 # Variables you need to change
 ##############################
 
-ref: "/n/holylfs/LABS/informatics/alex_lg/cod-pop-gen/00_input_data/REFs/Gardmor3.fasta"    # location of the reference genome
+ref: "/n/holyscratch01/informatics/alex_lg/cod-pop-gen/00_input_data/REFs/Gardmor3.fasta"    # location of the reference genome
 
 # If using the fastq -> BAM workflow change these, otherwise ignore them
 fastqDir: "data/BHduck/fastq/"      # location of fastq files; must be followed by a "/"
